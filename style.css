@@ -1,6 +1,8 @@
 /* styles.css */
 .containerHeading {
   text-align: center;
+  background-color: #333;
+  color: white;
 }
 #ramen-menu {
   display: flex;
@@ -16,4 +18,38 @@
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
+}
+#ramen-detail {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ramen-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#ramen-restaurant {
+  font-size: 18px;
+  color: #555;
+}
+
+#ramen-rating,
+#ramen-comment {
+  font-size: 16px;
+  color: #333;
+}
+.ramen-detail-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
