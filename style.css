@@ -1,0 +1,19 @@
+/* styles.css */
+.containerHeading {
+  text-align: center;
+}
+#ramen-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ramen-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
