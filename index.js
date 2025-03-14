@@ -43,4 +43,6 @@ function handleClick(ramen) {
   if (ramen.comment) ramenDetailDiv.appendChild(ramenComment);
 }
 
+// form section
+
 displayRamens();

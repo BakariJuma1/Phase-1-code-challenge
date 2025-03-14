@@ -59,3 +59,15 @@
   justify-content: center;
   align-items: center;
 }
+.userSection h3 {
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  background-color: black;
+}
+.userSection form {
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+}
