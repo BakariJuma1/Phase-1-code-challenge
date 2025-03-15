@@ -2,21 +2,23 @@ function displayRamens() {
   const ramenMenuDiv = document.getElementById("ramen-menu");
 
   ramens.forEach(function (ramen) {
+    //
     const ramenImage = document.createElement("img"); //<img> element for each ramen
     ramenImage.src = ramen.image;
 
     ramenImage.classList.add("ramen-image"); //styling class
 
+    // event listener for click on the image
     ramenImage.addEventListener("click", () => handleClick(ramen));
 
     ramenMenuDiv.appendChild(ramenImage);
   });
 }
 
-// Function to display ramen details when an image is clicked
+// ramen detail display section
 function handleClick(ramen) {
   const ramenDetailDiv = document.getElementById("ramen-detail");
-  ramenDetailDiv.innerHTML = ""; // Clear any previous details
+  ramenDetailDiv.innerHTML = "";
 
   const ramenImage = document.createElement("img");
   ramenImage.src = ramen.image;
@@ -41,7 +43,8 @@ function handleClick(ramen) {
   if (ramen.comment) ramenDetailDiv.appendChild(ramenComment);
 }
 
-// Function to add a new ramen to the menu
+// form section
+
 function addSubmitListener() {
   const form = document.getElementById("new-ramen-form");
 
@@ -61,6 +64,7 @@ function addSubmitListener() {
       image: document.getElementById("image").value,
     };
 
+    // Basic validation
     if (!newRamen.name || !newRamen.restaurant || !newRamen.image) {
       alert("Please fill out all required fields.");
       return;
@@ -83,8 +87,5 @@ function addSubmitListener() {
   });
 }
 
-function main() {
-  displayRamens();
-  addSubmitListener();
-}
-document.addEventListener("DOMContentLoaded", main);
+displayRamens();
+addSubmitListener();

@@ -65,6 +65,37 @@
   padding: 20px;
   color: white;
   background-color: black;
+  box-shadow: 2px 3px;
+}
+.userSection label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.userSection input[type="text"],
+.userSection input[type="number"],
+.userSection input[type="url"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.userSection button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.userSection button[type="submit"]:hover {
+  background-color: #45a049;
 }
 .userSection form {
   display: flex;
